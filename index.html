@@ -1,54 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
-    crossorigin="anonymous"
-  />
-  <link rel="stylesheet" href="style.css" />
-    <title>混元太极门专用打字练习游戏</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+		integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="style.css" />
+	<title>混元太极门专用打字练习游戏</title>
 </head>
 <body>
-    <!-- 音效 -->
-    <audio src="game_sounds/getScore.wav" id="getScore"></audio>
-    <audio src="game_sounds/btnClick.mp3" id="btnClick"></audio>
-    <audio src="game_sounds/keydown.wav" id="keydown"></audio>
-
-    <button class="settings-btn" id="settings-btn">
-        <i class="fas fa-cog"></i>
-    </button>
-    <div class="settings" id="settings">
-        <form action="" id="settings-form">
-            <div>
-                <label for="difficulty">游戏难度</label>
-                <select name="" id="difficulty">
-                    <option value="easy">简单</option>
-                    <option value="medium">普通</option>
-                    <option value="hard">困难</option>
-                </select>
-            </div>
-        </form>
-    </div>
-
-    <div class="container">
-        <h2>混元太极门专用打字练习</h2>
-        <small>输入以下文字:</small>
-        <h1 id="word"></h1>
-        <!-- 
-            autocomplete 自动完成拼写,预测字段的输入
-            autofocus 自动聚焦
-         -->
-        <input type="text" id="text" autocomplete="off" placeholder="请输入..." autofocus>
-        <p class="time-container">剩余时间: <span id="time">10s</span></p>
-        <p class="score-container">得分: <span id="score">0</span> </p>
-        <div id="end-game-container" class="end-game-container" ></div>
-    </div>
-
-
-    <script src="script.js"></script>
+	<button class="settings-btn" id="settings-btn">
+		<i class="fas fa-cog"></i>
+	</button>
+	<div class="settings" id="settings">
+		<form action="" id="settings-form">
+			<div>
+				<label for="difficulty">游戏难度</label>
+				<select name="" id="difficulty">
+					<option value="easy">简单</option>
+					<option value="medium">普通</option>
+					<option value="hard">困难</option>
+				</select>
+			</div>
+		</form>
+	</div>
+	<div class="container">
+		<h2>混元太极门专用打字练习</h2>
+		<small>输入以下文字:</small>
+		<h1 id="word"></h1>
+		<input type="text" id="text" autocomplete="off" placeholder="请输入..." autofocus>
+		<p class="time-container">剩余时间: <span id="time">10s</span></p>
+		<p class="score-container">得分: <span id="score">0</span> </p>
+		<div id="end-game-container" class="end-game-container"></div>
+	</div>
+	<audio src="game_sounds/getScore.wav" id="getScore"></audio>
+	<audio src="game_sounds/btnClick.mp3" id="btnClick"></audio>
+	<audio src="game_sounds/keydown.wav" id="keydown"></audio>
+	<script src="script.js"></script>
 </body>
 </html>
