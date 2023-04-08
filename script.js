@@ -43,7 +43,8 @@ function getRandomWord() {
 }
 
 function addWordToDOM() {
-	word.innerHTML = getRandomWord()
+
+	word.innerHTML = randomWord =  getRandomWord()
 }
 
 function updateTime() {
